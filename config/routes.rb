@@ -37,6 +37,10 @@ Rails.application.routes.draw do
 
     get 'people/delate/:id', to: 'people#delate'
 
+    get 'people/find'
+
+    post 'people/find'
+
     get 'cards/index'
     get 'cards', to: 'cards#index'
 
@@ -49,5 +53,5 @@ Rails.application.routes.draw do
     patch 'cards/edit/:id', to: 'cards#edit'
 
     get 'cards/delete/:id', to: 'cards#delete'
-    
+
   end
