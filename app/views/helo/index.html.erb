@@ -1,0 +1,10 @@
+<h1><%= @title %></h1>
+<p><%= @msg %></p>
+<%= form_tag(controller: "helo", action: "index") do %>
+    <%= select_tag('s1',
+        options_for_select(["Windows", "mac OS", "Linux"]),
+        {size:5, multiple:true}) %>
+    <%= submit_tag("Click") %>
+
+
+<% end %>
